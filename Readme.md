@@ -2,12 +2,12 @@
 
 ## **1. Project Overview**
 
-The **Todo Project** is a full-stack application with:
+The **Pre-Screening Project** with:
 
 - **Backend:** Laravel (PHP 8.3, Composer, MySQL)
 - **Frontend:** Vue.js (Vite)
 - **Containerization:** Docker & Docker Compose
-- **Purpose:** Manage Todo tasks with a clean frontend and robust backend API.
+  
 
 ---
 
@@ -74,7 +74,7 @@ php artisan migrate
 
 ```
 
-**Backend API is now accessible on port 9000.**
+**Backend API is now accessible on port 8000.**
 
 ---
 
