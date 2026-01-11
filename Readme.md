@@ -4,10 +4,9 @@
 
 The **Pre-Screening Project** with:
 
-- **Backend:** Laravel (PHP 8.3, Composer, MySQL)
-- **Frontend:** Vue.js (Vite)
+- **Backend:** Laravel (PHP 8.3, Composer, MySQL, nginx)
+- **Frontend:** Vue.js (Vite) and nginx
 - **Containerization:** Docker & Docker Compose
-  
 
 ---
 
@@ -26,10 +25,11 @@ To run this project locally, you only need:
 ## **3. Folder Structure**
 
 ```
-.
+
 ├── todo-backend/# Laravel backend
 │   ├── Dockerfile
 │   ├── docker-compose.yml
+|   ├── nginx.confa
 │   └── app, config, routes, storage, bootstrap
 │
 ├── todo-frontend/# Vue.js frontend
@@ -62,9 +62,11 @@ docker compose up -d--build
 ```
 
 1. Container tasks:
+
 - Installs PHP dependencies via Composer
 - Sets correct permissions for `storage` and `bootstrap/cache`
 - Starts PHP-FPM
+
 1. Optional Laravel commands:
 
 ```
